@@ -23,264 +23,62 @@
       max-width: 420px;
       box-shadow: 0 2px 16px rgba(0,0,0,0.08);
     }
-    .brand {
-      font-size: 22px;
-      font-weight: 700;
-      color: #111;
-      letter-spacing: -0.5px;
-    }
-    .tagline {
-      font-size: 13px;
-      color: #888;
-      margin-top: 2px;
-    }
-    .divider {
-      border: none;
-      border-top: 1px solid #eee;
-      margin: 20px 0;
-    }
+    .brand { font-size: 22px; font-weight: 700; color: #111; letter-spacing: -0.5px; }
+    .tagline { font-size: 13px; color: #888; margin-top: 2px; }
+    .divider { border: none; border-top: 1px solid #eee; margin: 20px 0; }
     .serial-box {
-      background: #f0faf4;
-      border: 1px solid #b6e8cb;
-      border-radius: 10px;
-      padding: 12px 16px;
-      margin-bottom: 24px;
-      display: flex;
-      align-items: center;
-      gap: 10px;
+      background: #f0faf4; border: 1px solid #b6e8cb; border-radius: 10px;
+      padding: 12px 16px; margin-bottom: 24px; display: flex; align-items: center; gap: 10px;
     }
-    .serial-label {
-      font-size: 12px;
-      color: #4a9e6e;
-      font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: 0.5px;
-    }
-    .serial-value {
-      font-size: 18px;
-      font-weight: 700;
-      color: #1a7a45;
-      letter-spacing: 1px;
-    }
-    .checkmark {
-      margin-left: auto;
-      width: 24px;
-      height: 24px;
-      background: #1a7a45;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-    .checkmark::after {
-      content: '';
-      width: 6px;
-      height: 10px;
-      border: 2px solid #fff;
-      border-top: none;
-      border-left: none;
-      transform: rotate(45deg) translate(-1px, -1px);
-      display: block;
-    }
-    .section-title {
-      font-size: 15px;
-      font-weight: 600;
-      color: #111;
-      margin-bottom: 16px;
-    }
+    .serial-label { font-size: 12px; color: #4a9e6e; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; }
+    .serial-value { font-size: 18px; font-weight: 700; color: #1a7a45; letter-spacing: 1px; }
+    .checkmark { margin-left: auto; width: 24px; height: 24px; background: #1a7a45; border-radius: 50%; display: flex; align-items: center; justify-content: center; }
+    .checkmark::after { content: ''; width: 6px; height: 10px; border: 2px solid #fff; border-top: none; border-left: none; transform: rotate(45deg) translate(-1px, -1px); display: block; }
+    .section-title { font-size: 15px; font-weight: 600; color: #111; margin-bottom: 16px; }
     .field { margin-bottom: 16px; }
-    label {
-      display: block;
-      font-size: 12px;
-      font-weight: 600;
-      color: #555;
-      margin-bottom: 6px;
-      text-transform: uppercase;
-      letter-spacing: 0.4px;
-    }
-    input[type="text"],
-    input[type="tel"] {
-      width: 100%;
-      border: 1px solid #ddd;
-      border-radius: 8px;
-      padding: 11px 14px;
-      font-size: 15px;
-      color: #111;
-      outline: none;
-      transition: border-color 0.2s;
-      background: #fafafa;
-    }
-    input[type="text"]:focus,
-    input[type="tel"]:focus {
-      border-color: #1a7a45;
-      background: #fff;
-    }
-    .upload-area {
-      border: 1.5px dashed #ccc;
-      border-radius: 8px;
-      padding: 18px;
-      text-align: center;
-      cursor: pointer;
-      transition: border-color 0.2s, background 0.2s;
-      background: #fafafa;
-      position: relative;
-    }
+    label { display: block; font-size: 12px; font-weight: 600; color: #555; margin-bottom: 6px; text-transform: uppercase; letter-spacing: 0.4px; }
+    input[type="text"], input[type="tel"] { width: 100%; border: 1px solid #ddd; border-radius: 8px; padding: 11px 14px; font-size: 15px; color: #111; outline: none; transition: border-color 0.2s; background: #fafafa; }
+    input[type="text"]:focus, input[type="tel"]:focus { border-color: #1a7a45; background: #fff; }
+    .upload-area { border: 1.5px dashed #ccc; border-radius: 8px; padding: 18px; text-align: center; cursor: pointer; transition: border-color 0.2s, background 0.2s; background: #fafafa; position: relative; }
     .upload-area:hover { border-color: #1a7a45; background: #f0faf4; }
-    .upload-area input[type="file"] {
-      position: absolute;
-      inset: 0;
-      opacity: 0;
-      cursor: pointer;
-      width: 100%;
-      height: 100%;
-    }
-    .upload-icon {
-      font-size: 28px;
-      margin-bottom: 6px;
-    }
-    .upload-text {
-      font-size: 13px;
-      color: #666;
-      line-height: 1.5;
-    }
+    .upload-area input[type="file"] { position: absolute; inset: 0; opacity: 0; cursor: pointer; width: 100%; height: 100%; }
+    .upload-icon { font-size: 28px; margin-bottom: 6px; }
+    .upload-text { font-size: 13px; color: #666; line-height: 1.5; }
     .upload-text strong { color: #1a7a45; }
-    #file-name {
-      margin-top: 8px;
-      font-size: 12px;
-      color: #1a7a45;
-      font-weight: 500;
-      min-height: 16px;
-    }
-    #preview-img {
-      margin-top: 10px;
-      max-width: 100%;
-      max-height: 160px;
-      border-radius: 8px;
-      display: none;
-      object-fit: cover;
-    }
-    .submit-btn {
-      width: 100%;
-      background: #1a7a45;
-      color: #fff;
-      border: none;
-      border-radius: 10px;
-      padding: 14px;
-      font-size: 16px;
-      font-weight: 600;
-      cursor: pointer;
-      margin-top: 8px;
-      transition: background 0.2s, transform 0.1s;
-      letter-spacing: 0.2px;
-    }
+    #file-name { margin-top: 8px; font-size: 12px; color: #1a7a45; font-weight: 500; min-height: 16px; }
+    #preview-img { margin-top: 10px; max-width: 100%; max-height: 160px; border-radius: 8px; display: none; object-fit: cover; }
+    .submit-btn { width: 100%; background: #1a7a45; color: #fff; border: none; border-radius: 10px; padding: 14px; font-size: 16px; font-weight: 600; cursor: pointer; margin-top: 8px; transition: background 0.2s, transform 0.1s; }
     .submit-btn:hover { background: #155e36; }
-    .submit-btn:active { transform: scale(0.98); }
     .submit-btn:disabled { background: #aaa; cursor: not-allowed; }
-    .error-msg {
-      font-size: 12px;
-      color: #d9534f;
-      margin-top: 4px;
-      display: none;
-    }
-    #success-screen {
-      display: none;
-      text-align: center;
-      padding: 16px 0;
-    }
-    .success-icon {
-      width: 64px;
-      height: 64px;
-      background: #1a7a45;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin: 0 auto 16px;
-    }
-    .success-icon::after {
-      content: '';
-      width: 14px;
-      height: 22px;
-      border: 3px solid #fff;
-      border-top: none;
-      border-left: none;
-      transform: rotate(45deg) translate(-2px, -2px);
-      display: block;
-    }
-    .success-title {
-      font-size: 20px;
-      font-weight: 700;
-      color: #111;
-      margin-bottom: 8px;
-    }
-    .success-sub {
-      font-size: 14px;
-      color: #666;
-      line-height: 1.6;
-    }
-    .success-serial {
-      margin-top: 16px;
-      background: #f0faf4;
-      border-radius: 8px;
-      padding: 10px 14px;
-      font-size: 13px;
-      color: #1a7a45;
-      font-weight: 600;
-    }
-    #invalid-screen {
-      display: none;
-      text-align: center;
-      padding: 16px 0;
-    }
-    .invalid-icon {
-      font-size: 48px;
-      margin-bottom: 12px;
-      color: #ccc;
-    }
-    #loading-overlay {
-      display: none;
-      position: fixed;
-      inset: 0;
-      background: rgba(255,255,255,0.85);
-      z-index: 100;
-      align-items: center;
-      justify-content: center;
-      flex-direction: column;
-      gap: 12px;
-    }
+    .error-msg { font-size: 12px; color: #d9534f; margin-top: 4px; display: none; }
+    #success-screen { display: none; text-align: center; padding: 16px 0; }
+    .success-icon { width: 64px; height: 64px; background: #1a7a45; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 16px; }
+    .success-icon::after { content: ''; width: 14px; height: 22px; border: 3px solid #fff; border-top: none; border-left: none; transform: rotate(45deg) translate(-2px, -2px); display: block; }
+    .success-title { font-size: 20px; font-weight: 700; color: #111; margin-bottom: 8px; }
+    .success-sub { font-size: 14px; color: #666; line-height: 1.6; }
+    .success-serial { margin-top: 16px; background: #f0faf4; border-radius: 8px; padding: 10px 14px; font-size: 13px; color: #1a7a45; font-weight: 600; }
+    #invalid-screen { display: none; text-align: center; padding: 16px 0; }
+    #loading-overlay { display: none; position: fixed; inset: 0; background: rgba(255,255,255,0.85); z-index: 100; align-items: center; justify-content: center; flex-direction: column; gap: 12px; }
     #loading-overlay.show { display: flex; }
-    .spinner {
-      width: 36px;
-      height: 36px;
-      border: 3px solid #eee;
-      border-top-color: #1a7a45;
-      border-radius: 50%;
-      animation: spin 0.7s linear infinite;
-    }
+    .spinner { width: 36px; height: 36px; border: 3px solid #eee; border-top-color: #1a7a45; border-radius: 50%; animation: spin 0.7s linear infinite; }
     @keyframes spin { to { transform: rotate(360deg); } }
     .loading-text { font-size: 14px; color: #555; font-weight: 500; }
   </style>
 </head>
 <body>
-
 <div id="loading-overlay">
   <div class="spinner"></div>
   <div class="loading-text">Registering your product…</div>
 </div>
-
 <div class="card">
   <div class="brand">Bonz</div>
   <div class="tagline">Product Activation &amp; Warranty Registration</div>
   <hr class="divider" />
-
-  <!-- Invalid serial screen -->
   <div id="invalid-screen">
-    <div class="invalid-icon">&#9888;</div>
+    <div style="font-size:48px;color:#ccc;margin-bottom:12px;">⚠</div>
     <div class="section-title" style="text-align:center;">Invalid QR Code</div>
-    <p style="font-size:13px;color:#888;margin-top:8px;line-height:1.6;">This QR code does not contain a valid serial number. Please scan the QR code printed on your Bonz product packaging.</p>
+    <p style="font-size:13px;color:#888;margin-top:8px;line-height:1.6;">Please scan the QR code on your Bonz product packaging.</p>
   </div>
-
-  <!-- Activation form -->
   <div id="form-screen">
     <div class="serial-box">
       <div>
@@ -289,40 +87,30 @@
       </div>
       <div class="checkmark"></div>
     </div>
-
     <div class="section-title">Fill in your details</div>
-
     <div class="field">
       <label for="cust-name">Full Name *</label>
       <input type="text" id="cust-name" placeholder="Enter your full name" />
       <div class="error-msg" id="err-name">Please enter your name.</div>
     </div>
-
     <div class="field">
       <label for="cust-mobile">Mobile Number *</label>
       <input type="tel" id="cust-mobile" placeholder="+91 XXXXX XXXXX" maxlength="15" />
       <div class="error-msg" id="err-mobile">Please enter a valid 10-digit mobile number.</div>
     </div>
-
     <div class="field">
       <label>Bill / Invoice Copy *</label>
       <div class="upload-area">
         <input type="file" id="bill-file" accept="image/*,application/pdf" />
-        <div class="upload-icon">&#128247;</div>
-        <div class="upload-text">
-          <strong>Tap to upload</strong> your purchase bill<br>
-          <span style="font-size:11px;color:#aaa;">JPG, PNG or PDF — max 5MB</span>
-        </div>
+        <div class="upload-icon">📷</div>
+        <div class="upload-text"><strong>Tap to upload</strong> your purchase bill<br><span style="font-size:11px;color:#aaa;">JPG, PNG or PDF — max 5MB</span></div>
       </div>
       <div id="file-name"></div>
       <img id="preview-img" alt="Bill preview" />
       <div class="error-msg" id="err-bill">Please upload your purchase bill.</div>
     </div>
-
     <button class="submit-btn" id="submit-btn" onclick="submitForm()">Activate My Product</button>
   </div>
-
-  <!-- Success screen -->
   <div id="success-screen">
     <div class="success-icon"></div>
     <div class="success-title">Product Activated!</div>
@@ -330,14 +118,10 @@
     <div class="success-serial" id="success-serial-text"></div>
   </div>
 </div>
-
 <script>
-  // ── CONFIG — replace these two values ──────────────────────────────────────
-  var SHEETDB_URL   = "https://sheetdb.io/api/v1/zq83jy9r3j7je";
+  var SHEETDB_URL = "https://sheetdb.io/api/v1/zq83jy9r3j7je";
   var CLOUDINARY_CLOUD = "dzwstdvqv";
-  var CLOUDINARY_PRESET =  "bonz-bills";
-  // ──────────────────────────────────────────────────────────────────────────
-
+  var CLOUDINARY_PRESET = "bonz-bills";
   var serialNumber = "";
 
   window.addEventListener("DOMContentLoaded", function () {
@@ -365,8 +149,6 @@
         img.style.display = "block";
       };
       reader.readAsDataURL(file);
-    } else {
-      document.getElementById("preview-img").style.display = "none";
     }
   });
 
@@ -378,59 +160,48 @@
     var fd = new FormData();
     fd.append("file", file);
     fd.append("upload_preset", CLOUDINARY_PRESET);
-    fd.append("public_id", "bonz-bills/" + serialNumber + "-" + Date.now());
+    fd.append("tags", serialNumber);
     var res = await fetch(
-      "https://api.cloudinary.com/v1_1/" + CLOUDINARY_CLOUD + "/upload",
+      "https://api.cloudinary.com/v1_1/" + CLOUDINARY_CLOUD + "/image/upload",
       { method: "POST", body: fd }
     );
+    if (!res.ok) {
+      var err = await res.json();
+      throw new Error(err.error ? err.error.message : "Upload failed");
+    }
     var data = await res.json();
-    if (!data.secure_url) throw new Error("Upload failed");
+    if (!data.secure_url) throw new Error("No URL returned");
     return data.secure_url;
   }
 
   async function submitForm() {
-    var name   = document.getElementById("cust-name").value.trim();
+    var name = document.getElementById("cust-name").value.trim();
     var mobile = document.getElementById("cust-mobile").value.trim().replace(/\s+/g, "");
-    var file   = document.getElementById("bill-file").files[0];
-
+    var file = document.getElementById("bill-file").files[0];
     var valid = true;
-    if (!name)                          { showError("err-name", true);   valid = false; } else { showError("err-name", false); }
+    if (!name) { showError("err-name", true); valid = false; } else { showError("err-name", false); }
     if (!/^\+?[0-9]{10,13}$/.test(mobile)) { showError("err-mobile", true); valid = false; } else { showError("err-mobile", false); }
-    if (!file)                          { showError("err-bill", true);   valid = false; } else { showError("err-bill", false); }
+    if (!file) { showError("err-bill", true); valid = false; } else { showError("err-bill", false); }
     if (!valid) return;
-
     var btn = document.getElementById("submit-btn");
     btn.disabled = true;
     document.getElementById("loading-overlay").classList.add("show");
-
     try {
       var billUrl = await uploadBill(file);
       var now = new Date().toLocaleString("en-IN", { timeZone: "Asia/Kolkata" });
-
       await fetch(SHEETDB_URL, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          data: [{
-            "Serial Number": serialNumber,
-            "Name": name,
-            "Mobile": mobile,
-            "Bill Copy URL": billUrl,
-            "Timestamp": now
-          }]
-        })
+        body: JSON.stringify({ data: [{ "Serial Number": serialNumber, "Name": name, "Mobile": mobile, "Bill Copy URL": billUrl, "Timestamp": now }] })
       });
-
       document.getElementById("loading-overlay").classList.remove("show");
       document.getElementById("form-screen").style.display = "none";
       document.getElementById("success-screen").style.display = "block";
-      document.getElementById("success-serial-text").textContent =
-        "Serial No: " + serialNumber + " — registered on " + now;
-
+      document.getElementById("success-serial-text").textContent = "Serial No: " + serialNumber + " — registered on " + now;
     } catch (err) {
       document.getElementById("loading-overlay").classList.remove("show");
       btn.disabled = false;
-      alert("Something went wrong. Please check your internet connection and try again.");
+      alert("Error: " + err.message);
     }
   }
 </script>
